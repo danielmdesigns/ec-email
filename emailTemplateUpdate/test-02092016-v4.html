@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    
+<!-- CSS Reset -->
+<style type="text/css">
+
+/* What it does: Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+body {
+  Margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+  width: 100%;
+}
+
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin:0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  Margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto; 
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+/* What it does: A work-around for iOS meddling in triggered links. */
+.mobile-link--footer a,
+a[x-apple-data-detectors] {
+  color:inherit !important;
+  text-decoration: underline !important;
+}
+    
+/* Progressive Enhancements */
+
+/* What it does: Hover styles for buttons */
+.button-td,
+.button-a {
+  transition: all 100ms ease-in;
+}
+.button-td:hover,
+.button-a:hover {
+  background: #FFB431 !important;
+  border-color: #FFB431 !important;
+}
+@media (max-width: 583px){
+  div[class="stack-column"] {
+	display: block !important;
+	max-width: 100% !important;
+	width: 100% !important;
+  }
+  .stack-column-center{
+	text-align: center !important;
+  }
+  .footer-inner{
+	padding: 20px 30px 20px !important;
+	text-align: center !important;
+  }
+}
+</style>
+
+</head>
+<body width="100%" height="100%" bgcolor="#F0F0F0" style="Margin: 0;">
+  <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#F0F0F0" style="border-collapse:collapse;">
+    <tr>
+      <td valign="top">
+    <center style="width: 100%;">
+
+<!-- Visually Hidden Preheader Text : BEGIN -->
+<div style="display:none; font-size:1px; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; mso-hide:all; font-family: sans-serif;">
+{{HEADER-TEXT}}
+</div>
+<!-- Visually Hidden Preheader Text : END -->
+
+<div style="max-width: 600px;">
+<!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+            
+            
+<!-- Email Body : BEGIN -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+    
+<!-- Hero Image, Flush : BEGIN -->
+<tr>
+  <td>
+    <img src="https://ecommission.com/email/img/header-img.jpg" width="600" height="100%" alt="{{HEADER-TEXT}}" border="0" align="center" style="width: 100%; max-width: 600px; height: auto;">
+  </td>
+</tr>
+<!-- Hero Image : END -->
+
+<!-- 1 Column Text : BEGIN -->
+<tr>
+  <td>
+  
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <tr>
+    <td style="padding: 20px 40px 20px 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333;">
+    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.
+    <br><br>
+    
+<!-- Button : Begin -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" style="Margin: auto;">
+  <tr>
+    <td style="border-radius: 3px; background: #FBA919; text-align: center;" class="button-td">
+      <a href="http://www.ecommission.com/{{UTM}}" style="background: #FBA919; border: 15px solid #FBA919; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a">
+      <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->A Button<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+<!-- Button : END -->
+    
+    <br>
+    Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    </td>
+  </tr>
+</table>
+    
+  </td>
+</tr>
+<!-- 1 Column Text : BEGIN -->
+
+<!-- Two Even Columns Footer : BEGIN -->
+<tr>
+  <td bgcolor="#0085B2" align="center" height="100%" valign="top" width="100%">
+    <!--[if mso]>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
+    <tr>
+    <td bgcolor="#0085B2" align="center" valign="top" width="560">
+    <![endif]-->
+    
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;" dir="rtl">
+  <tr>
+    <td class="footer-inner" align="center" valign="top" style="font-size:0; padding: 10px 0 30px 0;">
+      <!--[if mso]>
+      <table border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+      <tr>
+      <td align="left" valign="top" width="280">
+      <![endif]-->
+    <div style="display:inline-block; max-width:50%; Margin: 0 -2px; vertical-align:top; width:100%;" class="stack-column">
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" dir="ltr">
+        <tr>
+          <td style="padding: 0 20px;">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left; line-height: 8px;">
+              <tr>
+                <td color="#FFFFFF" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 24px; color: #FFFFFF; text-decoration: none; padding-top: 10px;" class="stack-column-center">
+                <strong><span style="color: #ABE0ED; font-size: 16px;">We're here to help:</span></strong> <br />
+                <img src="https://www.ecommission.com/email/img/icons/icon_phone.png" width="14" height="14" alt="Call: " border="0" align="center" style="max-width: 100%; height: auto; vertical-align:middle;">
+                	<a href="tel:1-877-882-4368" color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;">
+                    	<span style="color: #FFFFFF !important; text-decoration: none;">
+                        	<font color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;"> 1-877-882-4368</font>
+                        </span>
+                    </a><br>
+                <img src="https://www.ecommission.com/email/img/icons/icon_web.png" width="14" height="14" alt="Website: " border="0" align="center" style="max-width: 100%; height: auto; vertical-align:middle;">
+                	<a href="https://www.ecommission.com" color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;">
+                    	<span style="color: #FFFFFF !important; text-decoration: none;">
+                        	<font color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;"> ecommission.com</font>
+                        </span>
+                    </a><br>
+                Follow Us: &nbsp;
+                <a href="https://www.facebook.com/eCommission/"><img src="https://ecommission.com/email/img/icons/icon-facebook.png" width="14" height="14" alt="Facebook" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align:middle;"></a> &nbsp;
+                <a href="https://www.linkedin.com/company/ecommission"><img src="https://ecommission.com/email/img/icons/icon-linkedin.png" width="14" height="14" alt="LinkedIn" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align:middle;"></a>  &nbsp;
+                <a href="https://twitter.com/ecommission"><img src="https://ecommission.com/email/img/icons/icon-twitter.png" width="14" height="14" alt="Twitter" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align:middle;"></a>  &nbsp;
+                <a href="http://blog.ecommission.com/"><img src="https://ecommission.com/email/img/icons/icon-blog.png" width="14" height="14" alt="Blog" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align:middle;"> </a>
+                </td>
+              </tr> 
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+      <!--[if mso]>
+      </td>
+      <td align="left" valign="top" width="280">
+      <![endif]-->
+    <div style="display:inline-block; max-width:50%; vertical-align:top; width:100%;" class="stack-column">
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" dir="ltr">
+        <tr>
+          <td>
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
+              <tr>
+                <td valign="top" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #FFFFFF; padding-top: 30px; vertical-align:top;" class="stack-column-center">
+                <img src="https://ecommission.com/email/img/logos/ecommission-white-logo.png" width="275" height="50" alt="eCommission Financial Services" border="0" align="center" style="max-width: 100%; height: auto;"> 
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+      <!--[if mso]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+  
+    <!--[if mso]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </td>
+</tr>
+<!-- Two Even Columns Footer : END -->
+
+</table>
+<!-- Email Body : END -->    
+          
+<!-- Email Footer : BEGIN -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+  <tr>
+    <td style="padding: 20px 40px; width: 100%; font-size: 10px; font-family: sans-serif; font-style:italic; mso-height-rule: exactly; line-height:18px; color: #999999;">
+      *DISCLAIMER: Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum.
+    </td>
+  </tr>
+</table>
+<!-- Email Footer : END -->
+
+<!-- Trust Seal : BEGIN -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+    <tr>
+        <td class="hide" align="center" style="padding-bottom: 40px; text-align: center">
+            <center>
+            	<img src="https://ecommission.com/email/img/secure/bbb_verified_secure.png" width="247" height="29" alt="BBB A+ Accredited Business. Verified & Secured!" border="0" align="center" style="display:block; text-align: center; max-width: 100%; height: auto;">
+            </center>
+        </td>
+    </tr>
+</table>
+<!-- Trust Seal : END -->
+
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+        </div>
+    </center>
+</td>
+</tr>
+</table>
+</body>
+</html>
