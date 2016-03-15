@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    
+<!-- CSS Reset -->
+<style type="text/css">
+
+/* Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+body {
+  Margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Forces Outlook.com to display emails full width. */
+.ExternalClass {
+  width: 100%;
+}
+
+/* Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin:0 !important;
+}
+
+/* Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+
+/* Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  Margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto; 
+}
+
+/* Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode:bicubic;
+}
+
+/* Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+/* A work-around for iOS meddling in triggered links. */
+.mobile-link--footer a,
+a[x-apple-data-detectors] {
+  color:inherit !important;
+  text-decoration: underline !important;
+}
+
+/* Hover styles for buttons */
+.button-td,
+.button-a {
+  transition: all 100ms ease-in;
+}
+.button-td:hover,
+.button-a:hover {
+  background: #FFB431 !important;
+  border-color: #FFB431 !important;
+}
+/* 599 or less */
+@media only screen and (max-width: 599px) {
+td[class="pattern"] table { width: 100%; }
+td[class="pattern"] .col{
+	width: 33%;
+}
+}
+/*stack columns at 550px or less*/
+@media only screen and (max-width: 550px) {
+#templateColumns{
+	width:100% !important;
+}
+.templateColumnContainer{
+	display:block !important;
+	width:100% !important;
+	margin-bottom: 20px !important;
+}
+.columnImage{
+	height:auto !important;
+	max-width:550px !important;
+	width:100% !important; 
+}
+div[class="stack-column"] {
+  display: block !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.stack-column-center{
+  text-align: center !important;
+}
+td[class=button-td]{
+	text-align: center !important;
+	margin: 0 auto !important;
+}
+.footer-inner{
+  padding: 20px 30px 20px !important;
+  text-align: center !important;
+}
+}
+
+</style>
+
+</head>
+<body width="100%" height="100%" bgcolor="#F0F0F0" style="Margin: 0;">
+  <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#F0F0F0" style="border-collapse: collapse;">
+    <tr>
+      <td valign="top">
+    <center style="width: 100%;">
+
+<!-- Visually Hidden Preheader Text -->
+<div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+{{HEADER-TEXT}}
+</div>
+
+<div style="max-width: 600px;">
+<!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+            
+            
+<!-- Email Body -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+    
+<!-- Header Image-->
+<tr>
+  <td>
+    <a href="#{{URL}}" target="_blank"><img src="https://ecommission.com/email/img/header-img.jpg" width="600" alt="{{HEADER-TEXT}}" border="0" align="center" style="width: 100%; max-width: 600px; color: #0085B2; font-family: sans-serif; font-size: 15px; text-align: center;"></a>
+  </td>
+</tr>
+
+<!-- Email Copy -->
+<tr>
+  <td>
+  
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <tr>
+    <td align="left" style="padding: 20px 10px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; text-align:left;">
+    <strong style="font-size: 24px; color: #0085B2;">Three months into TRID: A first assessment</strong><br><br>
+Three months have passed since TRID took effect on October 3, 2015. TRID is an acronym derived from TILA/RESPA Integrated Disclosure and encompasses a set of rules meant to help borrowers better understand the terms of their home financing. For this reason TRID is sometimes simply referred to as the ‘Know Before You Owe’ rule...<br><br>
+<!-- Button -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" style="Margin: auto;">
+  <tr>
+    <td style="border-radius: 3px; background: #FBA919; text-align: center;" class="button-td">
+      <a href="#{{UTM}}" style="background: #FBA919; border: 15px solid #FBA919; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a" target="_blank">
+      <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{CTA NAME}}<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+      </a>
+    </td>
+  </tr>
+</table>
+<br>
+<hr color="#cacaca">
+    </td>
+  </tr>  
+</table>
+    
+  </td>
+</tr>
+
+<tr>
+  <td>
+  
+<table border="0" cellpadding="0" cellspacing="0" width="600" id="templateColumns" style="width: 100%; background-color: #FFFFFF;">
+  <tr>
+    <td align="center" valign="top" width="33%" class="templateColumnContainer">
+      <table border="0" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+          <td class="leftColumnContent">
+              <img src="http://placekitten.com/g/480/300" width="180" style="width: 100%; max-width:180px;" class="columnImage" alt=""/>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" class="leftColumnContent" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; text-align:left;">
+              <strong style="color: #0085B2;">8 tips for converting more real estate phone leads</strong><br><br>
+              There are some parts of being a great real estate agent that have to be learned. How to convert leads over the phone is one of those activities that you should not approach without some training under your belt. Trying to...<br><br>
+              <!-- Button -->
+              <table cellspacing="0" cellpadding="0" border="0" align="left" style="Margin: auto;">
+                <tr>
+                  <td style="border-radius: 3px; background: #FBA919; text-align: left;" class="button-td">
+                    <a href="#{{UTM}}" style="background: #FBA919; border: 15px solid #FBA919; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a" target="_blank">
+                    <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{CTA NAME}}<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                    </a>
+                  </td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td align="center" valign="top" width="33%" class="templateColumnContainer">
+      <table border="0" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+          <td class="leftColumnContent">
+              <img src="http://placekitten.com/g/480/300" width="180" style="width: 100%; max-width:180px;" class="columnImage" alt=""/>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" class="leftColumnContent" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; text-align:left;">
+              <strong style="color: #0085B2;">How to land more real estate referrals</strong><br><br>
+              Referrals are without a doubt the single best way to get a lead in just about every sales profession, but especially in real estate. Why? Because referrals tend to be a lot more qualified in that they come from a person in common...<br><br>
+              <!-- Button -->
+              <table cellspacing="0" cellpadding="0" border="0" align="left" style="Margin: auto;">
+                <tr>
+                  <td style="border-radius: 3px; background: #FBA919; text-align: left;" class="button-td">
+                    <a href="#{{UTM}}" style="background: #FBA919; border: 15px solid #FBA919; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a" target="_blank">
+                    <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{CTA NAME}}<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                    </a>
+                  </td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td align="center" valign="top" width="33%" class="templateColumnContainer">
+    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+      <tr>
+        <td class="rightColumnContent">
+            <img src="http://placekitten.com/g/480/300" width="180" style="width: 100%; max-width:180px;" class="columnImage" alt=""/>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" class="rightColumnContent" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; text-align:left;">
+            <strong style="color: #0085B2;">Should real estate agents lease or buy their next car?</strong><br><br>
+           Today, a good portion of real estate professionals are reasonably well informed about car leases vs. conventional loans and choose one over the other for what they believe are all the right reasons. For each well informed buyer, ...<br><br>
+            <!-- Button -->
+            <table cellspacing="0" cellpadding="0" border="0" align="left" style="Margin: auto;">
+              <tr>
+                <td style="border-radius: 3px; background: #FBA919; text-align: left;" class="button-td">
+                  <a href="#{{UTM}}" style="background: #FBA919; border: 15px solid #FBA919; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a" target="_blank">
+                  <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->{{CTA NAME}}<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                  </a>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+        
+    </td>
+  </tr>  
+</table>
+  
+  </td>
+</tr>
+
+<!--footer area-->
+<tr>
+<td>
+
+<br><br>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="center" style="background-color: #0085b2;">
+        
+<table cellspacing="0" cellpadding="0" border="0" width="80%">
+  <tr>
+    <td align="center" style="padding: 40px 40px 20px 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #ffffff; text-align:center; background-color: #0085b2;">
+    
+    <img style="text-align: center;" src="https://ecommission.com/email/img/_footer/footer-logo.png" alt=""><br><br>
+    <img src="https://ecommission.com/email/img/_footer/icon-facebook.png" alt="" style="height: 25px; width: 25px;"> &nbsp;
+    <img src="https://ecommission.com/email/img/_footer/icon-linkedin.png" alt="" style="height: 25px; width: 25px;"> &nbsp;
+    <img src="https://ecommission.com/email/img/_footer/icon-twitter.png" alt="" style="height: 25px; width: 25px;"> &nbsp;
+    <img src="https://ecommission.com/email/img/_footer/icon-blog.png" alt="" style="height: 25px; width: 25px;"><br><br>
+    If you have questions please do not hesitate to call us toll free <a class="mobile-link--footer" href="tel:1-877-882-4368" style="color: #FFFFFF; text-decoration: underline;">1-877-882-4368</a> or visit us online at <a href="www.ecommission.com" style="color: #FFFFFF; text-decoration: underline;">www.ecommission.com</a>
+    <br><br>
+    
+    </td>
+  </tr>
+</table>
+        
+        </td>
+	</tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td align="center" style="padding: 20px 40px 20px 40px; font-family: sans-serif; font-size: 12px; mso-height-rule: exactly; line-height: 20px; color: #999999; text-align:center; background-color: #f0f0f0;">
+        <em>*Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</em><br>
+        <img src="https://ecommission.com/email/img/_footer/secure-trust.png" alt="" style="padding:20px 0 0 0;">
+        </td>
+	</tr>
+</table>
+
+</td>
+</tr>
+
+</table>  
+
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+</div>
+</center>
+</td>
+</tr>
+</table>
+</body>
+</html>
