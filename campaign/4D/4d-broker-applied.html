@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    
+<!-- CSS Reset -->
+<style type="text/css">
+
+/* Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+body {
+  Margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Forces Outlook.com to display emails full width. */
+.ExternalClass {
+  width: 100%;
+}
+
+/* Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin:0 !important;
+}
+
+/* Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+
+/* Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  Margin: 0 auto !important;
+}
+table table table {
+  table-layout: auto; 
+}
+
+/* Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode:bicubic;
+}
+
+/* Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+/* A work-around for iOS meddling in triggered links. */
+.mobile-link--footer a,
+a[x-apple-data-detectors] {
+  color:inherit !important;
+  text-decoration: underline !important;
+}
+
+/* Hover styles for buttons */
+.button-td,
+.button-a {
+  transition: all 100ms ease-in;
+}
+.button-td:hover,
+.button-a:hover {
+  background: #FFB431 !important;
+  border-color: #FFB431 !important;
+}
+/* Stack columns when below 583px */
+@media (max-width: 550px){
+div[class="stack-column"] {
+  display: block !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+span.article-title{
+  text-align: center !important;
+}
+.stack-column-center{
+  text-align: center !important;
+}
+.footer-inner{
+  padding: 20px 30px 20px !important;
+  text-align: center !important;
+}
+}
+</style>
+
+</head>
+<body width="100%" height="100%" bgcolor="#F0F0F0" style="Margin: 0;">
+  <table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#F0F0F0" style="border-collapse: collapse;">
+    <tr>
+      <td valign="top">
+    <center style="width: 100%;">
+
+<!-- Visually Hidden Preheader Text -->
+<div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+{{HEADER-TEXT}}
+</div>
+
+<div style="max-width: 600px;">
+<!--[if (gte mso 9)|(IE)]>
+<table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+            
+            
+<!-- Email Body -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
+    
+<!-- Header Image-->
+<tr>
+  <td>
+    <a href="https://new.ecommission.com?utm_source={{TYPE}}&utm_medium=email&utm_campaign=pros_{{SEGMENT}}_{CAMPAIGN}_{CODE}" target="_blank"><img src="https://ecommission.com/email/2016/campaign/broker/header-img.jpg" width="600" alt="{{HEADER-TEXT}}" border="0" align="center" style="width: 100%; max-width: 600px; color: #0085B2; font-family: sans-serif; font-size: 15px; text-align: center;"></a>
+  </td>
+</tr>
+
+<!-- Email Copy -->
+<tr>
+  <td>
+  
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+  <tr>
+    <td align="left" style="padding: 20px 40px 20px 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #333333; text-align:left;">
+    
+<strong class="article-title" style="color: #46B7D5; font-weight: bold; font-size: 24px;">Dear {{Broker Name}},</strong>
+
+<br><br>
+{{Agent Name}} from your office has applied with eCommission to receive a commission advance on the sale of {{Property Address}}. <a href="#">Click here</a> to approve the advance request via DocuSign.
+
+<br><br>
+
+A commission advance is a financial service eCommission provides which allows your agents to receive their commissions before closing. As the broker, all commissions earned by your agents belong to you so we cannot advance funds to {{Agent Name}} without your consent. While we ask you to authorize advance requests for your agents, you bear no financial liability in the event a sale falls through. eCommission allows you to offer your agents this important tool for managing their business cash flow absolutely risk free!
+ 
+<br><br>
+ 
+ 
+ <strong>{{Insert Alliance Sentence}}</strong>
+ 
+<!--{{Insert Alliance Sentence}}-->
+ 
+<!--
+C21 - eCommission has been a CENTURY 21 Business Benefits SM program member since 1999.
+CB - eCommission has been a Coldwell Banker Business Advantage SM program member since 1999.
+ERA - eCommission has been an ERA Select Services® program member since 1999.
+BH - eCommission has been a Berhshire Hathaway Real Estate Preferred Supplier since 1999.
+RM - eCommission has been a RE/MAX® Approved Supplier since 1999.
+KW - eCommission has been in the Keller Williams Realty International's Approved Vendor Program since 2006.
+EXT - eCommission has been an EXIT Realty Approved Supplier since 2006.
+BHG - eCommission has been a member of the Better Homes and Gardens Real Estate Approved Supplier program since 2008.
+STHBY - eCommission has been a member of the Sotheby's International Realty Marquis Privileges program since 1999.
+-->
+
+<br><br>
+If you have questions about our process, below you will find some additional information. If you don’t see an answer to your question there, feel free to contact me personally at <a href="mailto: onathan.Vandestreek@ecommission.com">Jonathan.Vandestreek@ecommission.com</a> or toll-free at <a href="tel:877-882-4368">877-882-4368</a> ext. 2025.
+
+<br><br>
+
+We look forward to helping your agents!
+
+<br><br>
+
+<strong>
+Sincerely,<br>
+Jonathan VandeStreek<br>
+Director, Operations<br>
+</strong>
+
+<br><hr color="#e5e5e5"><br>
+
+<center>
+Watch this short video and discover why real estate mogul and star of ABC’s <em>Shark Tank</em> Barbara Corcoran, believes <strong>eCommission</strong> can be an important tool for recruiting new agents and retaining your top performers.
+</center>
+
+<br><br>
+
+<center>
+  <a href="https://new.ecommission.com/broker.php?autoShowBrokerVideo=true&utm_source={{TYPE}}&utm_medium=email&utm_campaign=pros_{{SEGMENT}}_{CAMPAIGN}_{CODE}" target="_blank"><img src="https://ecommission.com/email/img/video/4d-broker-email-video.jpg" width="350" alt="{{ALT TEXT}}" border="0" align="center" style="max-width: 100% !important; height: auto !important; color: #0085B2; font-family: sans-serif; font-size: 15px; text-align: center;"></a>
+</center>
+
+<br><hr color="#e5e5e5"><br>
+
+<strong class="article-title" style="color: #46B7D5; font-weight: bold; font-size: 24px;">Broker FAQs</strong>
+
+<br><br>
+ 
+<strong>Who is eCommission?</strong><br>
+eCommission is the #1 provider of commission advance services to real estate professionals in the United States, having advanced nearly $1 Billion since 1999.
+
+<br><br>
+
+<strong>Does the broker have any risk or liability?</strong><br>
+No. In the unlikely event we advance a commission to one of your agents on a sale that falls through, it is the agent’s responsibility to replace it using future commissions.
+
+<br><br>
+
+<strong>Why does the broker sign the advance agreement?</strong><br>
+As broker, all commissions earned by your agents belong to you. We cannot advance funds without your consent. The agreement you sign authorizes the assignment of the agent’s net commission on a particular sale, after any split with you, to eCommission.
+
+<br><br>
+
+<strong>Why is this good for my agents?</strong><br>
+Experience indicates that agents typically use eCommission two to three times per year, whenever business expenses surpass monthly cash flow. With eCommission as your partner, you can help your agents better control their cash flow keeping them focused and engaged, resulting in more listings, more sales and higher levels of productivity.
+
+<br><br>
+    
+    </td>
+  </tr>
+</table>
+    
+  </td>
+</tr>
+
+<!-- Footer -->
+<tr>
+  <td bgcolor="#0085B2" align="center" height="100%" valign="top" width="100%">
+    <!--[if mso]>
+    <table cellspacing="0" cellpadding="0" border="0" align="center" width="560">
+    <tr>
+    <td bgcolor="#0085B2" align="center" valign="top" width="560">
+    <![endif]-->
+    
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width: 560px;" dir="rtl">
+  <tr>
+    <td class="footer-inner" align="center" valign="top" style="font-size:0; padding: 10px 0 30px 0;">
+      <!--[if mso]>
+      <table border="0" cellspacing="0" cellpadding="0" align="center" width="560">
+      <tr>
+      <td align="left" valign="top" width="280">
+      <![endif]-->
+      
+<!-- Social & Contact Info -->
+<div style="display: inline-block; max-width: 40%; Margin: 0 -2px; vertical-align: top; width: 100%;" class="stack-column">
+  <table cellspacing="0" cellpadding="0" border="0" width="100%" dir="ltr">
+    <tr>
+      <td style="padding: 0 20px;">
+      
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left; line-height: 8px;">
+  <tr>
+    <td color="#FFFFFF" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 24px; color: #FFFFFF; text-decoration: none; padding-top: 10px;" class="stack-column-center">
+    <strong><span style="color: #ABE0ED; font-size: 16px;">We're here to help:</span></strong> <br />
+    <img src="https://www.ecommission.com/email/img/icons/icon_phone.png" width="14" height="14" alt="Call: " border="0" align="center" style="max-width: 100%; height: auto; vertical-align: middle; color: #FFFFFF; font-family: sans-serif; font-size: 12px;">
+        <a href="tel:1-877-882-4368" color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;">
+            <span style="color: #FFFFFF !important; text-decoration: none;">
+                <font color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;"> 1-877-882-4368</font>
+            </span>
+        </a><br>
+    <img src="https://www.ecommission.com/email/img/icons/icon_web.png" width="14" height="14" alt="Website: " border="0" align="center" style="max-width: 100%; height: auto; vertical-align: middle; color: #FFFFFF; font-family: sans-serif; font-size: 12px;">
+        <a href="https://www.ecommission.com" color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;">
+            <span style="color: #FFFFFF !important; text-decoration: none;">
+                <font color="#FFFFFF" style="color: #FFFFFF !important; text-decoration: none;"> ecommission.com</font>
+            </span>
+        </a><br>
+    Follow Us: &nbsp;
+    <a href="https://www.facebook.com/eCommission/"><img src="https://ecommission.com/email/img/icons/icon-facebook.png" width="14" height="14" alt="Facebook" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align: middle; color: #FFFFFF; font-family: sans-serif; font-size: 12px;"></a> &nbsp;
+    <a href="https://www.linkedin.com/company/ecommission"><img src="https://ecommission.com/email/img/icons/icon-linkedin.png" width="14" height="14" alt="LinkedIn" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align: middle; color: #FFFFFF; font-family: sans-serif; font-size: 12px;"></a>  &nbsp;
+    <a href="https://twitter.com/ecommission"><img src="https://ecommission.com/email/img/icons/icon-twitter.png" width="14" height="14" alt="Twitter" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align: middle; color: #FFFFFF; font-family: sans-serif; font-size: 12px;"></a>  &nbsp;
+    <a href="http://blog.ecommission.com/"><img src="https://ecommission.com/email/img/icons/icon-blog.png" width="14" height="14" alt="Blog" border="0" align="center" style="max-width: 100%; height: auto; display: inline-block; vertical-align: middle; color: #FFFFFF; font-family: sans-serif; font-size: 12px;"> </a>
+    </td>
+  </tr> 
+</table>
+
+      </td>
+    </tr>
+  </table>
+</div>
+  <!--[if mso]>
+  </td>
+  <td align="left" valign="top" width="280">
+  <![endif]-->
+  
+<!-- Logo -->
+<div style="display: inline-block; max-width: 60%; vertical-align: top; width: 100%;" class="stack-column">
+  <table cellspacing="0" cellpadding="0" border="0" width="100%" dir="ltr">
+    <tr>
+      <td>
+      
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 12px; text-align: left;">
+  <tr>
+    <td valign="top" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #FFFFFF; padding-top: 30px; vertical-align: top;" class="stack-column-center">
+    <img src="https://ecommission.com/email/img/logos/ecommission-white-logo.png" width="275" height="50" alt="eCommission Financial Services" border="0" align="center" style="max-width: 100%; height: auto; padding: 0 10px; color: #FFFFFF; font-family: sans-serif; font-size: 12px; text-align: center;"> 
+    </td>
+  </tr>
+</table>
+        
+      </td>
+    </tr>
+  </table>
+</div>
+    
+      <!--[if mso]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+  
+    <!--[if mso]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </td>
+</tr>
+
+</table>  
+          
+<!-- Disclaimer -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+  <tr>
+    <td style="padding: 20px 40px; width: 100%; font-size: 10px; font-family: sans-serif; font-style:italic; mso-height-rule: exactly; line-height:18px; color: #999999;">
+      <em><!--*{{DISCLAIMER}}--></em>
+    </td>
+  </tr>
+</table>
+
+<!-- Trust Seal -->
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+  <tr>
+    <td class="hide" align="center" style="padding-bottom: 40px; text-align: center">
+      <center>
+        <img src="https://ecommission.com/email/img/secure/bbb_verified_secure.png" width="247" height="29" alt="Verified & Secured!" border="0" align="center" style="display:block; text-align: center; max-width: 100%; height: auto; color: #0085B2; font-family: sans-serif; font-size: 12px; text-align: center;">
+      </center>
+    </td>
+  </tr>
+</table>
+
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+        </div>
+    </center>
+</td>
+</tr>
+</table>
+</body>
+</html>
