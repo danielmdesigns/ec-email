@@ -72,32 +72,12 @@ a[x-apple-data-detectors]{
   line-height: inherit !important;
 }
 /*Hover styles for buttons*/
-.button-link, .text-link{
+.button-link{
   transition: all 0.5s ease-out;
 }
 .button-link:hover{
   background: #FFB431 !important;
   border-color: #FFB431 !important;
-}
-.text-link:hover{
-  color: #FFB431 !important;
-}
-@media only screen and (max-width: 599px){
-/*Responsive image overwrites static width & height*/
-img.thumbnail{
-  max-width: 415px !important;
-  width: 100% !important;
-  height: auto !important;
-  border: 0 !important;
-}
-/*stacks columns at 599px or less*/
-.container{
-  width: 100% !important;
-}
-.col{
-  display: block !important;
-  width: 100% !important;
-  margin-bottom: 20px !important;
 }
 }
 </style>
@@ -190,6 +170,7 @@ ${{HEADER-TEXT}}
     <a href="http://blog.ecommission.com" target="_blank"><img src="https://ecommission.com/email/img/_footer/icon-blog.png" alt="Blog" border="0" style="height:25px; width:25px;"></a><br><br>
     If you have questions please do not hesitate to call us toll free <strong><a class="white-link" href="tel:1-877-882-4368" color="white" style="color:#FFFFFF !important; text-decoration:underline !important; white-space:nowrap; overflow:hidden;">1&#8209;877&#8209;882&#8209;4368</a></strong> or visit us online at <strong color="#FFFFFF" style="color:#FFFFFF !important;"><a class="white-link" href="https://www.ecommission.com" color="#FFFFFF" style="color:#FFFFFF !important; text-decoration:underline !important; white-space:nowrap; overflow:hidden;">www.ecommission.com</a></strong>
     <br><br>
+    <span style="font-size:10px;">Did you receive this email in error? If so, <strong><a class="white-link" href="mailto:unsubscribe@ecommission.com?subject=EMAIL UNSUBSCRIBE" color="white" style="color:#FFFFFF !important; text-decoration:underline !important; white-space:nowrap; overflow:hidden;">unsubscribe here</a></strong>.</span>
     </td>
   </tr>
 </table>
@@ -207,10 +188,16 @@ ${{HEADER-TEXT}}
 
 <table cellspacing="0" cellpadding="0" border="0" width="100%">
 	<tr>
-		<td align="center" style="padding:20px 40px 20px 40px; font-family:sans-serif; font-size:12px; mso-height-rule:exactly; line-height:20px; color:#999999; text-align:center; background-color:#f0f0f0;">
+		<td align="center" style="padding:20px 40px 0 40px; font-family:sans-serif; font-size:12px; mso-height-rule:exactly; line-height:20px; color:#999999; text-align:center; background-color:#f0f0f0;">
         <img src="https://ecommission.com/email/img/_footer/secure-trust.png" alt="Safe & Secure" style="padding:20px 0 0 0;"><br><br>
-        <em></em><br>
+					<!--<em></em><br><br>-->
         </td>
+	</tr>
+	<tr>
+		<td align="center" style="padding:10px 40px 20px 40px; font-family:sans-serif; font-size:12px; mso-height-rule:exactly; line-height:20px; color:#999999; text-align:center; background-color:#f0f0f0;">
+				This message was intended for: <a href="mailto:%%TO_EMAIL%%">%%TO_EMAIL%%</a><br>
+				<a href="%%OPTOUT%%">Update your preferences</a> | <a href="%%OPTOUT%%">Unsubscribe</a> | <a href="%%MAILTO_OPTOUT%%">Unsubscribe via email</a><br><br><br><br>
+    </td>
 	</tr>
 </table>
 
